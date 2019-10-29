@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "singleton.h"
 namespace Ui {
 class MainWindow;
 }
@@ -17,6 +17,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    Singleton * sig1;
+    Singleton * sig2;
 };
 
 #endif // MAINWINDOW_H
